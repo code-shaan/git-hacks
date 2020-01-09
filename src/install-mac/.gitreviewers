@@ -1,0 +1,33 @@
+#############################
+#List of Reviewers
+#
+#
+#This list is read by the
+#git-push command "gps" to
+#determine the assignment
+#of a reviewer to a commit
+#when pushed from a dev box
+#
+#
+#Keep this list updated when
+#someone new joins a team as
+#a reviewer
+#
+#
+#Reviewers are queried by
+#either their initials or
+#by their first name
+#############################
+
+
+
+#A
+#####
+au=alice.user@company.com
+#alice=alice.user@company.com
+
+
+#B
+#####
+bt=bob.tester@company.com
+#bob=bob.tester@company.com

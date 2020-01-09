@@ -1,0 +1,33 @@
+Instructions to install a-faster-git script on a Macintosh
+
+Pre-requisite:  These instructions assume that you have GIT installed on your Macintosh before executing Step 1.
+                If you do not have GIT installed, please install it before continuing.
+                GIT can be downloaded from the following URL: https://git-scm.com/download/mac
+
+
+1. Clone this project using the following URL:
+        URL: git@github.com:shantanu-us21/a-faster-git.git
+        COMMAND: git clone git@github.com:shantanu-us21/a-faster-git.git
+
+2. Copy/Move the provided script in the following location:
+        SCRIPT: .a-faster-git-mac.sh
+        LOCATION: ~/.a-faster-git-mac.sh
+
+3. Check if the following file exists:
+        FILE: bash_profile
+        COMMAND: find . -type f -name ".bash_profile"
+
+4. If file is exists, skip to Step 6
+
+5. If this file doesn't exist, create it, add the following line at the very top and save it:
+        COMMAND: vi ~/.bash_profile
+        LINE: #!/usr/bin/env bash
+
+6. Add the following lines to .bash_profile:
+        COMMAND: vi ~/.bash_profile
+        LINES:  if [ -f /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-completion.bash ]; then
+                        . /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-completion.bash
+                fi
+
+                source /Applications/Xcode.app/Contents/Developer/usr/share/git-core/git-prompt.sh
+                source ~/.a-faster-git-mac.sh
