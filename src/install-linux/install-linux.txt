@@ -1,0 +1,35 @@
+Instructions to install a-faster-git script on Linux
+
+Pre-requisite:  These instructions assume that you have GIT installed on your Linux before executing Step 1.
+                If you do not have GIT installed, please install it before continuing.
+                GIT can be downloaded from the following URL: https://git-scm.com/book/en/v2/Getting-Started-Installing-Git
+
+
+1. Clone this project using the following URL:
+        URL: git@github.com:shantanu-us21/a-faster-git.git
+        COMMAND: git clone git@github.com:shantanu-us21/a-faster-git.git
+
+2. Copy/Move the provided script in the following location:
+        SCRIPT:	.a-faster-git-linux.sh
+        LOCATION: ~/.a-faster-git-linux.sh
+
+3. Copy/Move the provided script in the following location:
+        SCRIPT:	.git-completion.bash
+        LOCATION: ~/.git-completion.bash
+
+4. Check if the following file exists:
+        FILE: bashrc
+        COMMAND: find . -type f -name ".bashrc"
+
+5. If file is exists, skip to Step 7
+
+6. If this file doesn't exist, create it, add the following line at the very top and save it:
+        COMMAND: vi ~/.bashrc
+        LINE:	#!/usr/bin/env bash
+
+7. Add the following lines to .bashrc:
+        COMMAND: vi ~/.bashrc
+        LINES: 	source ~/.a-faster-git-linux.sh
+		source ~/.git-completion.bash
+
+8. Save the file. Close all open terminal windows and restart. 
